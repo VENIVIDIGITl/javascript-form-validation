@@ -1,8 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Sen&display=swap");
+
 html {
   box-sizing: border-box;
 }
 
 body {
+  background: #c9ced3;
+  font-family: Sen, sans-serif;
+  letter-spacing: 2px;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
+}
+
+.container {
+  background: #fff;
+  width: 480px;
+  height: 630px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Form */
+form {
+  width: 90%;
+}
+
+.form-group {
+  height: 65px;
+}
+
+label {
+  position: relative;
+  bottom: 3px;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+input:valid {
+  border: 1px solid #2da778;
+}
+
+input:invalid {
+  border: 1px solid #a72d49;
+}
+
+button {
+  background: #121212;
+  color: #fff;
+  font-family: Sen, sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  height: 50px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(200%);
+  background:#1a1a1a;
+}
+
+button:focus {
+  outline: none;
+}
+
+.message-container {
+  color: #121212;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin-top: 20px;
 }
